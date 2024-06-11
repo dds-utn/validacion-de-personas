@@ -20,6 +20,11 @@ public class AdminEmailNotificator implements IObserver  {
             }
 
             @Override
+            public String getSubject() {
+                return "Error en plataforma de Alta de Personas";
+            }
+
+            @Override
             public String getTo() {
                 //TODO
                 return null;

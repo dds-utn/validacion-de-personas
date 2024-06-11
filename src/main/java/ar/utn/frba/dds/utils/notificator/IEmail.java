@@ -5,4 +5,5 @@ public interface IEmail {
     String getTo();
     String[] getCC();
     String getFrom();
+    String getSubject();
 }

@@ -25,6 +25,7 @@ public class PersonasController {
     public void crearPersona(PersonaDTO personaDTO) {
         try {
             this.renaperService.esValido(Integer.parseInt(personaDTO.getDni()), personaDTO.getSexo());
+            //TODO
         }
         catch (RenaperException e) {
             this.observers.parallelStream().forEach(o -> o.serNotificadoDeError(e));
